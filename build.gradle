@@ -19,3 +19,9 @@ dependencies {
 tasks.named('test') {
     useJUnitPlatform()
 }
+
+// war 풀기 (인텔리제이 무료버전용)
+task explodedWar(type: Copy) {
+    into "$buildDir/exploded"
+    with war
+}
